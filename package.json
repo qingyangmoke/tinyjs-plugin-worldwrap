@@ -1,16 +1,15 @@
 {
   "name": "tinyjs-plugin-worldwrap",
   "version": "0.0.1",
-  "author": "采东",
+  "author": "清扬陌客 <qingyangmoke@qq.com>",
   "description": "world wrap plugin",
   "keywords": [
     "tinyjs",
-    "plugin",
-    "worldwrap"
+    "plugin"
   ],
   "repository": {
     "type": "git",
-    "url": "git@gitlab.alipay-inc.com:tiny-plugins/tinyjs-plugin-worldwrap.git"
+    "url": "https://github.com/qingyangmoke/tinyjs-plugin-worldwrap.git"
   },
   "main": "dist/index.js",
   "files": [
