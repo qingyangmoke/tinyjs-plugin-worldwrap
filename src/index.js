@@ -1,6 +1,6 @@
 /**
  * @file        world wrap plugin
- * @author      fusheng.sfs
+ * @author      采东
  */
 
 /**
