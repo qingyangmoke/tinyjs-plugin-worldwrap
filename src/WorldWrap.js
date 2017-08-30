@@ -8,7 +8,7 @@
 * @method Tiny.WorldWrap#wrap
 * @param {Tiny.Sprite|Tiny.Image|Tiny.TileSprite|Tiny.Text} sprite - 游戏对象
 * @param {number} [padding=0] - x,y的空余区域，如果设置了useBounds 该参数会被忽略
-* @param {boolean} [useBounds=false] - If useBounds is false wrap checks the object.x/y coordinates. If true it does a more accurate bounds check, which is more expensive.
+* @param {boolean} [useBounds=false] - 如果useBounds设置成了false 那么就用sprite的x/y 加上padding来计算物体的边界，否则就用sprite的x/y 加上width/height实际尺寸来计算 这个参数设置后padding参数会被忽略
 * @param {boolean} [horizontal=true] - 是否开启横向wrap 默认开启
 * @param {boolean} [vertical=true] - 是否开启纵向wrap 默认开启
 */
@@ -42,8 +42,6 @@ function wrap(app, sprite, padding, useBounds, horizontal, vertical) {
       sprite.y = worldBounds.top - padding;
     }
   } else {
-    // sprite.updateTransforms();
-
     if (horizontal) {
       if ((sprite.x + sprite.width) < worldBounds.x) {
         sprite.x = worldBounds.right;
@@ -61,6 +59,5 @@ function wrap(app, sprite, padding, useBounds, horizontal, vertical) {
     }
   }
 }
-
 
 export default wrap;
