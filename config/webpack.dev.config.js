@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const pkg = require('../package.json');
 
-const banner = `Tiny.Weapon
+const banner = `tinyjs-plugin-worldwrap
 Description:World Wrap Plugin
 Author: ${pkg.author}
 Version: v${pkg.version}
